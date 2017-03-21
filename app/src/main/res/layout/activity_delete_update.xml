@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hp.expensemanager.DeleteUpdateActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Update/Delete Trip"
+            android:id="@+id/textView"
+            android:layout_alignEnd="@+id/gridLayout"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:background="#1E88E5"
+            android:layout_weight="0.53"
+            android:textColor="#ffffff" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/gridLayout"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="108dp"
+                android:layout_height="45dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Trip Id"
+                android:id="@+id/textView1"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="From"
+                android:id="@+id/textView2"
+                android:layout_row="1"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/editText1"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:inputType="textCapCharacters" />
+
+            <EditText
+                android:layout_width="302dp"
+                android:layout_height="45dp"
+                android:id="@+id/editText2"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="To"
+                android:id="@+id/textView3"
+                android:layout_row="2"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Start Date"
+                android:id="@+id/textView4"
+                android:layout_row="3"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/editText3"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="End date"
+                android:id="@+id/textView5"
+                android:layout_row="4"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/editText4"
+                android:layout_row="3"
+                android:layout_column="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Budget"
+                android:id="@+id/textView6"
+                android:layout_row="5"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="269dp"
+                android:layout_height="45dp"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/editText5"
+                android:layout_row="4"
+                android:layout_column="2" />
+
+            <EditText
+                android:layout_width="262dp"
+                android:layout_height="45dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText6"
+                android:layout_row="5"
+                android:layout_column="2" />
+
+        </GridLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:id="@+id/button1"
+                android:layout_marginTop="25dp"
+                android:onClick="saveTrip" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/button2" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
